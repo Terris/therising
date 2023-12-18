@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { AppProviders } from "./providers/AppProviders";
+import { AppProviders } from "../providers/AppProviders";
+import { cn } from "../utils/cn";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={cn(inter.className, "min-h-screen min-w-screen")}>
         <AppProviders>{children}</AppProviders>
       </body>
     </html>

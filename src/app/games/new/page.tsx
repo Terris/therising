@@ -37,12 +37,7 @@ export default function NewGamePage() {
           onChange={(e) => setName(e.currentTarget.value)}
           className="w-full mb-4 p-2 rounded bg-slate-200 text-black"
         />
-        <button
-          type="submit"
-          className="bg-red-500 py-2 px-4 rounded hover:bg-red-500/75"
-        >
-          Start
-        </button>
+        <button type="submit">Start</button>
       </form>
     </main>
   );
